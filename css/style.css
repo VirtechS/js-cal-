@@ -1,7 +1,5 @@
 @charset "UTF-8";
-
 /* ------------------- General ------------------- */
-
 body {
   font-family: "Roboto", sans-serif;
   color: #161616;
@@ -22,7 +20,6 @@ img {
 }
 
 /* ------------------- Header ------------------- */
-
 .header-inner {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -30,15 +27,9 @@ img {
 }
 
 .header-inner-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .heading-inner {
@@ -60,8 +51,6 @@ img {
 }
 
 .social-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -71,9 +60,13 @@ img {
 }
 
 /* Для экранов с шириной от 0 до 1170px */
-
+@media (max-width: 1170px) {
+  .social-icon-link {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+}
 /* ------------------- Footer ------------------- */
-
 .footer {
   padding-top: 5px;
   padding-bottom: 30px;
@@ -112,7 +105,16 @@ img {
 }
 
 /* Для экранов с шириной от 0 до 1170px */
+@media (max-width: 1170px) {
+  .footer-cta-title {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
 
+  .footer-cta-text {
+    font-size: 22px;
+  }
+}
 .footer-inner {
   text-align: center;
   padding-bottom: 80px;
@@ -123,7 +125,6 @@ img {
 }
 
 /* Calc */
-
 h1,
 h2,
 h3,
@@ -134,7 +135,6 @@ h6 {
 }
 
 /* ------------------- Calc ------------------- */
-
 .calc-wrapper {
   padding-top: 50px;
   padding-bottom: 75px;
@@ -187,8 +187,6 @@ h6 {
 }
 
 .radio-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   /* align-items: center; */
 }
@@ -213,14 +211,10 @@ h6 {
 .radio-holder input{
 	margin-top: 6px;
 } */
-
 /* .radio {
 	margin-right: 15px;
 } */
-
 .input-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 40px;
 }
@@ -249,15 +243,12 @@ h6 {
 }
 
 /* ------------ TYPO ------------ */
-
 .section-title {
   margin-bottom: 20px;
 }
 
 .section-title--vertical-center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .title-bold {
@@ -280,10 +271,7 @@ h6 {
 }
 
 /* ------------ FORMS ------------ */
-
 .checkbox-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
 }
@@ -293,7 +281,6 @@ h6 {
 }
 
 /* ------------ PRICE ------------ */
-
 .calc-price {
   padding: 30px 50px;
   /* border: 10px solid #7ac5ea; */
@@ -303,8 +290,7 @@ h6 {
   bottom: 0;
   background-color: #daf3ff;
   background-color: white;
-  -webkit-box-shadow: -10px 0px 25px rgba(143, 179, 195, 0.685);
-          box-shadow: -10px 0px 25px rgba(143, 179, 195, 0.685);
+  box-shadow: -10px 0px 25px rgba(143, 179, 195, 0.685);
 }
 
 .calc-price-title {
@@ -327,23 +313,14 @@ h6 {
 }
 
 .rooms-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: start;
-          flex-direction: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: start;
+  align-items: center;
 }
 
 .rooms-radio-real {
   opacity: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   height: 0;
   width: 0;
   margin: 0;
@@ -363,20 +340,4 @@ h6 {
 
 .rooms-radio-real:checked + .rooms-radio-fake {
   background-color: #fbd422;
-}
-
-@media (max-width: 1170px) {
-  .social-icon-link {
-    margin-right: 15px;
-    margin-bottom: 15px;
-  }
-
-  .footer-cta-title {
-    font-size: 26px;
-    margin-bottom: 15px;
-  }
-
-  .footer-cta-text {
-    font-size: 22px;
-  }
 }

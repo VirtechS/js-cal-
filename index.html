@@ -5,8 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Расчет стоимости проекта</title>
-		<link rel="stylesheet" href="css/style.min.css?_v=20220120145821">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700&display=swap&subset=cyrillic-ext&_v=20220120145821" rel="stylesheet" />
+		<link rel="stylesheet" href="css/style.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet" />
 	</head>
 
 	<body>
@@ -33,11 +33,11 @@
 					<div class="calc-section">
 						<h4 class="checkbox-wrapper title-bold section-title">Тип ремонта</h4>
 						<label class="radio-wrapper" data-name="mobile">
-							<input type="radio" class="radio" name="type" value="1" />
+							<input type="radio" class="radio" name="type" value="1"checked />
 							<div class="title-lite">Косметический</div>
 						</label>
 						<label class="radio-wrapper" data-name="mobile">
-							<input type="radio" class="radio" name="type" value="1.3" checked />
+							<input type="radio" class="radio" name="type" value="1.3"/>
 							<div class="title-lite">
 								Капитальный
 								<span class="note">+30% к стоимости</span>
@@ -80,22 +80,22 @@
 							</label>
 
 							<label class="rooms-label">
-								<input class="rooms-radio-real" type="radio" name="rooms" value="1" />
+								<input class="rooms-radio-real" type="radio" name="rooms" value="1" checked/>
 								<span class="rooms-radio-fake">1</span>
 							</label>
 
 							<label class="rooms-label">
-								<input class="rooms-radio-real" type="radio" name="rooms" value="1" checked />
+								<input class="rooms-radio-real" type="radio" name="rooms" value="1.02"/>
 								<span class="rooms-radio-fake">2</span>
 							</label>
 
 							<label class="rooms-label">
-								<input class="rooms-radio-real" type="radio" name="rooms" value="1.05" />
+								<input class="rooms-radio-real" type="radio" name="rooms" value="1.03" />
 								<span class="rooms-radio-fake">3</span>
 							</label>
 
 							<label class="rooms-label">
-								<input class="rooms-radio-real" type="radio" name="rooms" value="1.05" />
+								<input class="rooms-radio-real" type="radio" name="rooms" value="1.04" />
 								<span class="rooms-radio-fake">4</span>
 							</label>
 
@@ -111,10 +111,10 @@
 					<div class="calc-section">
 						<label class="checkbox-wrapper title-bold section-title"> Дополнительные опции </label>
 						<label class="radio-wrapper">
-							<input type="checkbox" class="radio" name="ceiling" value="1.1" />
+							<input type="checkbox" class="radio" name="ceiling" value="900" />
 							<div class="title-lite">
 								Натяжные потолки
-								<span class="note">+10% к стоимости</span>
+								<span class="note">900 руб за м.кв</span>
 							</div>
 						</label>
 						<label class="radio-wrapper">
@@ -147,6 +147,6 @@
 			</div>
 		</main>
 
-		<script src="js/app.min.js?_v=20220120145821"></script>
+		<script src="js/app.min.js"></script>
 	</body>
 </html>
